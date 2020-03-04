@@ -105,9 +105,6 @@ var GF = function(colsBlock = 11, rowsBlock = 7, borderWidth = 20) {
     return {
         start: start
     }
-
-
-
 }
 
 
