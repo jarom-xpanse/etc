@@ -8,6 +8,7 @@ var player1;
 function init() {
     x = new GF();
     x.start();
+
 }
 
 // Start of Game Framework
@@ -19,6 +20,7 @@ var GF = function(colsBlock = 11, rowsBlock = 7, borderWidth = 20) {
     
     var start = function(){
         canvas = document.createElement('canvas'); // create Element used for intellisense to detect canvas properties and methods
+        canvas = document.querySelector('#canvas');
         document.body.appendChild(canvas);
         ctx = canvas.getContext('2d');
         canvas.tabIndex = '1'; // the canvas cannot detect keydown event when it cannot be focused;
